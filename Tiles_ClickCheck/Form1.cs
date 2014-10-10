@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace Tiles_ClickCheck {
@@ -27,22 +25,17 @@ namespace Tiles_ClickCheck {
         }
 
         private void Form1_MouseDown(object sender, MouseEventArgs e) {
-            Point tilePosition = GetTilePosition(e);
             Graphics graphics = this.CreateGraphics();
-            graphics.DrawImage(contentManager.Get<Image>(3), tilePosition);
+            graphics.DrawImage(contentManager.Get<Image>(3), tileMap.GetTilePosition(e.X, e.Y));
         }
-
-        private Point GetTilePosition(MouseEventArgs mouseEventArgs) {
-            return new Point(mouseEventArgs.X - (mouseEventArgs.X % tileMap.TileSizeX), mouseEventArgs.Y - (mouseEventArgs.Y % tileMap.TileSizeY));
-        }
-
+        
         private void DrawGrid(int[,] grid) {
             Graphics graphics = this.CreateGraphics();
 
             for (int y = 0; y < tileMap.SizeY; y++) {
                 for (int x = 0; x < tileMap.SizeX; x++) {
                     Point p = new Point {X = x * tileMap.TileSizeX, Y = y * tileMap.TileSizeY};
-                    DrawTile(grid, graphics, x, y, p);
+                    DrawTile(grid[x, y], graphics, p);
                 }
             }
             /*
@@ -56,8 +49,8 @@ namespace Tiles_ClickCheck {
             */
         }
 
-        private void DrawTile(int[,] grid, Graphics graphics, int x, int y, Point p) {
-            graphics.DrawImage(contentManager.Get<Image>(grid[x, y]), p);
+        private void DrawTile(int contentId, Graphics graphics, Point p) {
+            graphics.DrawImage(contentManager.Get<Image>(contentId), p);
         }
     }
 }

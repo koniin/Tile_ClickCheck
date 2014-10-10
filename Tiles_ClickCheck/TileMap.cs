@@ -1,5 +1,7 @@
-﻿using System.IO;
+﻿using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace Tiles_ClickCheck
 {
@@ -29,6 +31,10 @@ namespace Tiles_ClickCheck
                     Grid[y, x] = row[x];
                 }
             }
+        }
+
+        public Point GetTilePosition(int xActual, int yActual) {
+            return new Point(xActual - (xActual % TileSizeX), yActual - (yActual % TileSizeY));
         }
 
         private int[] GetRow(string row) {
