@@ -1,0 +1,14 @@
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\bin\Debug\Tiles_ClickCheck.exe.config
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\obj\Debug\Tiles_ClickCheck.csprojResolveAssemblyReference.cache
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\obj\Debug\Tiles_ClickCheck.Properties.Resources.resources
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\obj\Debug\Tiles_ClickCheck.csproj.GenerateResource.Cache
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\bin\Debug\Tiles_ClickCheck.exe
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\bin\Debug\Tiles_ClickCheck.pdb
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\obj\Debug\Tiles_ClickCheck.exe
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\obj\Debug\Tiles_ClickCheck.pdb
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\obj\Debug\Tiles_ClickCheck.Form1.resources
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\bin\Debug\darkgreen.png
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\bin\Debug\lightblue.png
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\bin\Debug\red.png
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\bin\Debug\Grid.txt
+C:\Code\Tiles_ClickCheck\Tiles_ClickCheck\bin\Debug\yellow64.png
